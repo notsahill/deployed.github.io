@@ -155,3 +155,48 @@
         font-size: 0.8rem;
     }
 }
+
+/* Override legacy 5-fixed-item layout — now using flow-based grid */
+.skillIteams{
+    grid-template-areas: none;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 20px 10px;
+    width: 100%;
+}
+.iteam{
+    grid-column: auto !important;
+    grid-row: auto !important;
+    grid-area: auto !important;
+    justify-self: center !important;
+    min-width: 0;
+}
+.iteam p{
+    font-size: 0.95rem;
+    white-space: normal;
+    word-break: break-word;
+}
+@media only screen and (max-width: 768px) {
+    .skillIteams{
+        grid-template-areas: none;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px 8px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .skillIteams{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 6px;
+    }
+    .iteam p{
+        font-size: 0.85rem;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .skillIteams{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .iteam p{
+        font-size: 0.78rem;
+    }
+}

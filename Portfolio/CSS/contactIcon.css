@@ -47,19 +47,7 @@
     opacity: 0;
     z-index: 100000;
 }
-.first::before{
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: url(../icons/twitter.svg);
-    transform: rotate(-10deg);
-    background-color: #061320;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 50%;
-}
+/* twitter/X icon removed */
 .second::before{
     position: absolute;
     height: 50px;

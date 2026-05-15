@@ -45,9 +45,6 @@ function hide() {
     closeIcon.classList.add("hideIcon");
     contactIcon.classList.add("showIcon");
 }
-firstPlatform.addEventListener('click',()=>{
-    window.open("https://twitter.com/not_humorous");
-});
 secondPlatform.addEventListener('click',()=>{
     window.open("mailto:contactsahil.cs@gmail.com");
 });
