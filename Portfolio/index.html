@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/contactIcon.css">
+    <link rel="stylesheet" href="CSS/Projects.css">
+    <link rel="stylesheet" href="CSS/experience.css">
 
     <!-- Inconsolata CSS : font-family: 'Inconsolata', monospace; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +63,9 @@
         <a href=""><img src="https://img.icons8.com/pastel-glyph/2x/internet.png" alt=""></a>
         <ul>
             <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
             <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
         <menu>
@@ -72,7 +76,9 @@
     </nav>
     <div class="phoneMenu">
         <h2><a href="#About" onclick="hideMenu();">About</a></h2>
+        <h2><a href="#Experience" onclick="hideMenu();">Experience</a></h2>
         <h2><a href="#Skills" onclick="hideMenu();">Skills</a></h2>
+        <h2><a href="#Projects" onclick="hideMenu();">Projects</a></h2>
         <h2><a href="#Contact" onclick="hideMenu();">Contact</a></h2>
     </div>
     <!-- Right Section -->
@@ -110,7 +116,7 @@
                 <h1>Mohd Sahil</h1>
             </div>
             <h2>I'm a <span class="role" data-wait="1000"
-                    data-words='["Programmer.","Coding Enthusiast. ","Passionate Learner."]''
+                    data-words='["Software Engineer.","Backend Developer.","Cloud & AWS Enthusiast.","Problem Solver."]''
                     data-wait='3000'></span></h2>
         </div>
         <!-- For Background Animation -->
@@ -130,23 +136,78 @@
         <div class="wrap">
             <div class="heading" data-aos="fade-right">
                 <h2>Mohd Sahil</h2>
-                <h3>I love exploring new things!</h3>
+                <h3>Building reliable backend systems.</h3>
             </div>
             <div class="aboutMe" data-aos="fade-right" data-aos-anchor=".heading">
-                <p>I'm a Final Year  B. Tech. undergrad student at <a href="http://www.glbitm.ac.in/"
-                        target="_blank"> GL Bajaj Institute of Technology and Management</a>,
-                        I would describe myself as an avid learner with an immense passion for technology. 
-                    <span></span> My skills range from Data Structures and Algorithms,<span> programming in C/C++ and Python</span> and <span>Web Development.</span>
+                <p>I'm a <span>Software Development Engineer</span> at <a href="https://prosperr.io/"
+                        target="_blank">Prosperr.io</a>, where I design and build
+                    <span>scalable backend microservices</span>, <span>AWS infrastructure automation</span>,
+                    and <span>AI-assisted document processing</span> pipelines that power critical financial workflows.
                 </p>
-                <p>I enjoy learning new skills and implementing them in real life!<br>
-                    I am a believer of peer learning and always ready to share my knowledge.</p>
+                <p>My day-to-day stack is <span>Java &amp; Spring Boot</span> on the service side and
+                    <span>AWS (ECS, Fargate, Lambda, CDK)</span> on the infra side. I enjoy taking ambiguous
+                    product problems, breaking them into clean state-machines and APIs, and shipping them to production.
+                </p>
+                <p>Outside of work I solve DSA problems (<span>700+ on LeetCode &amp; GFG</span>) and tinker
+                    with full-stack &amp; LLM-powered side projects.</p>
             </div>
             <a href="mailto:contactsahil.cs@gmail.com"><button>Reach out to me</button></a>
             <div class="img" data-aos="fade-left">
-                <img src="./images/ProfilePic.png" alt="Picture of Sahil">
+                <img src="./images/ProfilePic2.png" alt="Picture of Sahil">
             </div>
         </div>
     </div>
+    <!-- Experience Page -->
+    <div class="experience part" id="Experience">
+        <div class="title">
+            <h1>Experience</h1>
+            <hr>
+        </div>
+        <div class="wrap timeline">
+            <div class="job" data-aos="fade-up">
+                <div class="jobHead">
+                    <h2>Software Development Engineer <span class="company">@ Prosperr.io</span></h2>
+                    <span class="period">Oct 2024 — Present</span>
+                </div>
+                <ul>
+                    <li>Owned end-to-end design and backend development of the <span>Reimbursement microservice</span>, defining workflows, building REST APIs, and driving production rollout for transaction processing systems.</li>
+                    <li>Designed and implemented <span>state-machine driven backend workflows</span> for the ITR filing journey, improving reliability and reducing manual intervention across dependent services.</li>
+                    <li>Automated AWS ECS Fargate deployments using <span>AWS CDK (TypeScript)</span>, establishing standardized provisioning and blue-green deployment workflows that cut setup time by <span>70%</span>.</li>
+                    <li>Optimized AWS infrastructure costs by <span>~30%</span> via resource cleanup, workload analysis, and right-sizing over-provisioned services.</li>
+                    <li>Integrated <span>Bolna.ai voice agents</span> with internal backend workflows and designed conversational prompt/configuration flows, reducing CSR follow-up workload by <span>55%</span>.</li>
+                    <li>Revamped the payslip processing pipeline using <span>AWS Textract + LLM-assisted extraction</span>, improving structured data accuracy to <span>85%</span> and increasing successful document parsing by <span>4x</span>.</li>
+                </ul>
+            </div>
+            <div class="job" data-aos="fade-up">
+                <div class="jobHead">
+                    <h2>SDE Intern <span class="company">@ Prosperr.io</span></h2>
+                    <span class="period">Jul 2024 — Oct 2024</span>
+                </div>
+                <ul>
+                    <li>Migrated authentication flow from password-based login to <span>OTP-based authentication</span>, reducing signup drop-offs by <span>30%</span>.</li>
+                    <li>Developed <span>Puppeteer.js automation</span> to fetch ITR documents from government portals, improving document availability and cutting manual uploads.</li>
+                </ul>
+            </div>
+            <div class="awards" data-aos="fade-up">
+                <h3>Awards @ Prosperr.io</h3>
+                <ul class="awardList">
+                    <li>
+                        <span>Top Achiever</span> — recognized for high-impact backend delivery and ownership across production systems.
+                        <a href="https://www.linkedin.com/posts/md-sahil22_a-small-milestone-but-a-meaningful-one-ugcPost-7434621138149748737-gxfF" target="_blank" rel="noopener">View post ↗</a>
+                    </li>
+                    <li>
+                        <span>Unsung Hero</span> — awarded for behind-the-scenes work driving reliability and operational improvements.
+                        <a href="https://www.linkedin.com/posts/md-sahil22_prosperring-ugcPost-7340793950208737282-b3xV" target="_blank" rel="noopener">View post ↗</a>
+                    </li>
+                    <li>
+                        <span>Hidden Gem</span> — recognized for AI-assisted automation initiatives across production workflows.
+                        <a href="https://www.linkedin.com/posts/md-sahil22_prosperr-ugcPost-7285688824494481408-vwzX" target="_blank" rel="noopener">View post ↗</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Skills Page -->
     <div class="skills part" id="Skills">
         <div class="title">
@@ -154,53 +215,117 @@
             <hr>
         </div>
         <div class="wrap">
-            <p data-aos="fade-right" class="skillText">An individual eager to learn and explore new fields of life and technology, with good listening
-                skills and fast learning abilities.</p>
+            <p data-aos="fade-right" class="skillText">Backend-leaning full-stack engineer. Comfortable across the stack but happiest designing scalable services, AWS infra, and data-heavy automations.</p>
             <div class="interest" data-aos="fade-right" data-aos-anchor=".skillText">
-                <h3>Interests</h3>
-                <div class>
-                    <p>Data Structures and Algorithms</p>
-                    <p>Programming in C/C++ and Python</p>
-                    <p>Web Development</p>
-                    <p>Sports</p>
+                <h3>Focus Areas</h3>
+                <div>
+                    <p>Backend Microservices &amp; REST APIs</p>
+                    <p>AWS Cloud &amp; Infrastructure-as-Code</p>
+                    <p>System Design &amp; Workflow Automation</p>
+                    <p>LLM &amp; AI-assisted Pipelines</p>
+                    <p>Data Structures &amp; Algorithms</p>
                 </div>
             </div>
 
             <div class="skillIteams" data-aos="fade-left">
-                <div class="iteam iteam1">
+                <div class="iteam">
                     <div class="iteamCircle">
-                        <img src="./icons/cpp.svg" alt=" C Language">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                     </div>
-                    <p>C/C++</p>
+                    <p>Java</p>
                 </div>
-                <div class="iteam iteam2">
+                <div class="iteam">
                     <div class="iteamCircle">
-                        <img src="./icons/icons8-python.svg" alt="C++ Language">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
                     </div>
-                    <p>Python</p>
+                    <p>Spring Boot</p>
                 </div>
-                <div class="iteam iteam3">
+                <div class="iteam">
                     <div class="iteamCircle">
-                        <img src="./icons/javascript.svg" alt="JavaScript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                    </div>
+                    <p>TypeScript</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    </div>
+                    <p>Node.js</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+                    </div>
+                    <p>AWS</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                    </div>
+                    <p>Docker</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                    </div>
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                    </div>
+                    <p>MongoDB</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                    </div>
+                    <p>C++</p>
+                </div>
+                <div class="iteam">
+                    <div class="iteamCircle">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                     </div>
                     <p>JavaScript</p>
-                </div>
-                <div class="iteam iteam4">
-                    <div class="iteamCircle">
-                        <img src="./icons/html5.svg" alt="HTML5">
-                    </div>
-                    <p>HTML5</p>
-                </div>
-                <div class="iteam iteam5">
-                    <div class="iteamCircle">
-                        <img src="./icons/css3.svg" alt="CSS3">
-                    </div>
-                    <p>CSS3</p>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Projects Section -->
+    <div class="projects part" id="Projects">
+        <div class="title">
+            <h1>Projects</h1>
+            <hr>
+        </div>
+        <div class="wrap">
+            <div class="projectCard" data-aos="fade-up">
+                <h2>Conduit <span class="tag">In Development</span></h2>
+                <p class="stack">Distributed Systems · Message Queues · Event Sourcing · Workers · Postgres</p>
+                <p>A self-hosted workflow orchestration engine — a lightweight analogue to Temporal / AWS Step Functions, built from first principles. Reliably executes multi-step async workflows across distributed workers with durable state, automatic retries with exponential backoff, dead-letter queues, idempotent execution, and crash recovery via event sourcing. Supports saga-style compensation for partial failures and ships with a document-processing reference workflow (OCR → validate → classify → persist → notify).</p>
+            </div>
+            <div class="projectCard" data-aos="fade-up">
+                <h2>Reimbursement Microservice <span class="tag">@ Prosperr.io</span></h2>
+                <p class="stack">Java · Spring Boot · PostgreSQL · AWS SQS · ECS Fargate</p>
+                <p>Designed and built an end-to-end backend service powering reimbursement transaction processing — from API contracts and state-machine workflows to async event handling and production rollout.</p>
+            </div>
+            <div class="projectCard" data-aos="fade-up">
+                <h2>AWS CDK Deployment Automation <span class="tag">@ Prosperr.io</span></h2>
+                <p class="stack">AWS CDK · TypeScript · ECS Fargate · ALB · CloudWatch</p>
+                <p>Standardized infra provisioning and blue-green deployments across services using AWS CDK. Reduced new-service setup time by 70% and removed manual ECS/ALB configuration overhead.</p>
+            </div>
+            <div class="projectCard" data-aos="fade-up">
+                <h2>Payslip Extraction Pipeline <span class="tag">@ Prosperr.io</span></h2>
+                <p class="stack">AWS Textract · OpenAI · Java · S3</p>
+                <p>Revamped the payslip processing pipeline combining OCR with LLM-assisted structured extraction. Pushed parsing accuracy to 85% and increased successful document processing by 4x.</p>
+            </div>
+            <div class="projectCard" data-aos="fade-up">
+                <h2>ANDI-BOT <span class="tag">Hackathon · 5th / 80+ teams</span></h2>
+                <p class="stack">MERN · OpenAI APIs</p>
+                <p>Full-stack conversational platform with multi-turn context handling and low-latency request orchestration. Won 5th place at FinXThon among 80+ teams.</p>
+            </div>
+        </div>
+    </div>
     
     <!-- Contact Me -->
     <div class="contact part" id="Contact">
@@ -212,6 +337,10 @@
             <h3 data-aos="zoom-in">My inbox and social medias are always open. Whether you have a question or just want to say hello, I
                 will try my best to get back to you! Feel free to contact me about any relevant opportunity or just a
                 simple talk.</h3>
+            <div class="contactInfo" data-aos="zoom-in">
+                <p><a href="mailto:contactsahil.cs@gmail.com">contactsahil.cs@gmail.com</a></p>
+                <p><a href="tel:+916307650739">+91 63076 50739</a></p>
+            </div>
             <a href="mailto:contactsahil.cs@gmail.com"><button>Mail Me</button></a>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/md-sahil22/" target="_blank"><img
@@ -223,7 +352,7 @@
         </div>
         <footer>
             <span class="footer" data-wait="500"
-                data-words='["I love to code.","Creating better version of myself!!","Searching for opportunities.","Learning..."]'></span>
+                data-words='["I love to code.","Building things that scale.","Always learning."]'></span>
         </footer>
     </div>
 
@@ -238,10 +367,8 @@
           duration: 800
       });
       if(window.innerWidth <= 768){
-          document.querySelector(".interest").removeAttribute("data-aos-anchor");
-          document.querySelector(".healerText").setAttribute("data-aos-anchor",".healerImg")
-          document.querySelector(".colorGuessText").setAttribute("data-aos-anchor",".colorGuessImg")
-          
+          var interest = document.querySelector(".interest");
+          if (interest) interest.removeAttribute("data-aos-anchor");
         }
     </script>
   
